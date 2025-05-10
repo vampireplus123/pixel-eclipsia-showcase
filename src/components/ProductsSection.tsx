@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GameCard from './GameCard';
 import PixelButton from './PixelButton';
 
@@ -36,9 +37,11 @@ const ProductsSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-10">
           <h2 className="pixel-text text-xl md:text-2xl text-white">OUR GAMES</h2>
-          <PixelButton color="yellow">
-            View All Games
-          </PixelButton>
+          <Link to="/games">
+            <PixelButton color="yellow">
+              View All Games
+            </PixelButton>
+          </Link>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -57,9 +60,11 @@ const ProductsSection = () => {
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
             Join our community to get early access to our upcoming releases and exclusive content.
           </p>
-          <PixelButton color="pink" size="lg">
-            Subscribe for Updates
-          </PixelButton>
+          <Link to="/contact">
+            <PixelButton color="pink" size="lg">
+              Subscribe for Updates
+            </PixelButton>
+          </Link>
         </div>
       </div>
     </section>
