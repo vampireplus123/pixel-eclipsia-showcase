@@ -24,9 +24,11 @@ const Navbar = () => {
           <Link to="/about" className="nav-item pixel-text-alt text-white text-lg hover:text-eclipsia-purple px-2 py-1">
             About
           </Link>
-          <PixelButton color="purple" size="sm">
-            Contact Us
-          </PixelButton>
+          <Link to="/contact">
+            <PixelButton color="purple" size="sm">
+              Contact Us
+            </PixelButton>
+          </Link>
         </div>
       </nav>
     </header>
